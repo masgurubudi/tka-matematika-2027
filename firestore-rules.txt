@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Koleksi nilai Try Out TKA Matematika SMP 2027 (Kabupaten Pacitan)
+    match /tka_matematika_2027/{docId} {
+      allow read, create: if true;
+      allow update, delete: if false;
+    }
+  }
+}
