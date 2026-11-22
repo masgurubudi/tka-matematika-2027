@@ -385,7 +385,6 @@ function menuHTML(){
       '<button class="tk-btn" style="margin-top:0" data-act="resume">Lanjutkan Sesi</button>'+
       '<button class="tk-btn ghost" style="margin-top:0" data-act="discard">Buang &amp; Mulai Baru</button></div></div>';
   }
-  h+='<p class="tk-sub">Setiap sesi diundi acak dari bank 59 soal: <b>15 Pilihan Ganda</b> + <b>10 Pilihan Ganda Kompleks</b> + <b>5 Benar/Salah</b>. Urutan soal dan urutan pilihan jawaban juga diacak. Jawaban masih bisa diubah sebelum dikumpulkan.</p>';
   h+='<div class="tk-label">Nama Siswa</div><input id="tk-nama" class="tk-input" type="text" maxlength="30" placeholder="Tulis namamu..." value="'+esc(S.nama)+'">';
   h+='<div class="tk-label">Kelas / Rombel</div><div class="tk-kelasrow">'+
     '<button class="tk-chip sel" type="button">Kelas IX</button>'+
@@ -396,7 +395,7 @@ function menuHTML(){
   h+='<div class="tk-label">Nama Sekolah</div>'+schoolComboHTML();
   h+='<button class="tk-btn" data-act="start">Mulai Try Out</button>';
   h+='<div class="tk-menu-msg">'+(S.menuMsg?esc(S.menuMsg):"")+"</div>";
-  h+='<p class="tk-foot">Soal sesuai kerangka asesmen TKA — Perkaban BSKAP No. 047/H/AN/2025.<br>Nilai tersimpan otomatis ke database kabupaten. Pastikan koneksi internet aktif saat mengerjakan.</p>';
+  h+='<p class="tk-foot">Soal sesuai kerangka asesmen TKA<br>Perkaban BSKAP No. 047/H/AN/2025.</p>';
   return h;
 }
 
